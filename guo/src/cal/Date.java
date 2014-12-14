@@ -7,11 +7,11 @@ public class Date {
 		int days = 0,d = 0;
 		
 		Scanner scanner =new Scanner(System.in);
-		System.out.println("ÊäÈëÄê£º");
+		System.out.println("è¾“å…¥å¹´");
 		int year = scanner.nextInt();
-		System.out.println("ÊäÈëyue£º");
+		System.out.println("è¾“å…¥æœˆ");
 		int month = scanner.nextInt();
-		System.out.println("ÊäÈëri£º");
+		System.out.println("è¾“å…¥å¤©");
 		int day = scanner.nextInt();
 		for(int i=1;i<month;i++){
 		switch(i){
