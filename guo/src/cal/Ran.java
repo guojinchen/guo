@@ -6,7 +6,7 @@ public class Ran {
 	public static void main(String[] args) {
 		int[] array = new int[100];
 		for(int i=0;i<100;i++){
-		     array[i]=(int)(Math.random()*11+50);	
+		     array[i]=(int)(Math.random()*10+50);	
 		}
 		int a0=0, a1=0,a2=0,a3=0,a4=0,a5=0,a6=0,a7=0,a8=0,a9=0,a10=0;
 		for(int j=0;j<array.length;j++){
