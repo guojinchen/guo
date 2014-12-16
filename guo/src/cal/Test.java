@@ -20,6 +20,20 @@ public class Test {
 		 }
  	}
 	 public static void main(String[] args) {
+		 int aa=9;
+		 float b=aa;
+		 int cc=(int) b;
+		 System.out.println(cc);
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 System.out.println("{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
 		Tank t1 = new Tank();
 		Tank t2 = new Tank();
 		 t1.level=9;
