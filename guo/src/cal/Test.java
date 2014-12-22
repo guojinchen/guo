@@ -1,84 +1,33 @@
 package cal;
-
-import java.util.ArrayList;
-import java.util.Random;
-
-public class Test {
-	
-	public void panduan(String str1,String str2){
-		 if(str1==str2){
-			 System.out.println("==");
-		 }
-		  if(str1!=str2){
-			 System.out.println("!=");
-		 }
-		  if(str1.equals(str2)){
-			 System.out.println("equals");
-		 }
-		  if(!str1.equals(str2)){
-			 System.out.println("!equals");
-		 }
- 	}
-	 public static void main(String[] args) {
-		 int aa=9;
-		 float b=aa;
-		 int cc=(int) b;
-		 System.out.println(cc);
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 System.out.println("{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
-		Tank t1 = new Tank();
-		Tank t2 = new Tank();
-		 t1.level=9;
-		 t2.level=47;
-		 System.out.println("t1.level:"+t1.level+"   t2.level:"+t2.level);
-		 t1=t2;
-		 System.out.println("t1.level:"+t1.level+"    t2.level:"+t2.level);
-		 t1.level=7;
-		 System.out.println("t1.level:"+t1.level+"    t2.level:"+t2.level);
-		 System.out.println("-----------------");
-		 
-		 Random r= new Random();
-		int a = r.nextInt(10);
-		 System.out.println("a: "+a);
-		 
-		 System.out.println("________________________________");
-		 Test t= new Test();
-		 t.panduan("ttt", "ttt");
-		 t.panduan("ottt", "ttttt");
-		 String st = new String("a");
-		 String st2 = new String("a");
-		 System.out.println(st==st2);
-		 System.out.println(st!=st2);
-		 
-		 
-		 int []shuzu = {1,2,3,4,5,6};
-		 ArrayList array = new ArrayList();
-		 
-		 for(int i:shuzu){
-			 array.add(i);
-			 System.out.println(i);
-		 }
-		 for(Object i :array){
-			 
-			 System.out.println("array"+i);
-		 }
-		 Random ran = new Random();
-		 int []shu = new int[9];
-		 for(int i=0;i<9;i++){
-			 shu[i] = ran.nextInt(100);
-		 }
-		 
-		 for(int i : shu){
-			 System.out.println("iiiiii"+i);
-		 }
-
-		}
+ 
+public class Test{ 
+public void test(int number[],int n,int count[]){
+	for(int i=0;i<100;i++){
+		if(n==number[i])
+			++count[number[i]-50];
+	}
+	for(int i=0;i<11;i++)
+System.out.println("i+50"+":"+count[i]);
 }
+public Test(int number[]){
+	int count[]=new int[11];
+ for(int i=50;i<=60;i++)
+	 test(number,i,count);
+	}
+public static void main(String[] args) { 
+	int[] number=new int [100]; 
+	
+	//生成随机数100个
+	for(int i=0;i<100;i++) 
+	{
+	int j=(int) (Math.random()*11+50);
+	number[i]=j;
+	System.out.print(number[i]+","); 
+	}
+	new Test(number);
+
+}
+
+	
+} 
+

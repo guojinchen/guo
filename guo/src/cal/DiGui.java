@@ -2,6 +2,8 @@ package cal;
 
 import java.util.Arrays;
 
+//在50到60的范围内随机生成100个随机数（随机数有三位有效数字）(用递归)，并统计出现次数。
+
 public class DiGui {
 	 static int timeCount;
 	 static int TimeTime;//在递归的时候计算每个元素的重复的值，
