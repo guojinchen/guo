@@ -17,23 +17,7 @@ public class QuickSort {
 		
 		
 	}
-	 private int partition(int sortArray[],int low,int hight)
-	    {
-	        int key = sortArray[low];
-	         
-	        while(low<hight)
-	        {
-	            while(low<hight && sortArray[hight]>=key)
-	                hight--;
-	            sortArray[low] = sortArray[hight];
-	             
-	            while(low<hight && sortArray[low]<=key)
-	                low++;
-	            sortArray[hight] = sortArray[low];
-	        }
-	        sortArray[low] = key;
-	        return low;
-	    }
+	
 		
 		
 		/**
